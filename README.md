@@ -8,7 +8,7 @@ All of the issues I'm running into with VPS right now are things that stop worki
 
 I don't know how to fix these issues, but I do know what I'm trying to accomplish in the first place by making pages client-only or server-only.
 
-So, to try and remove these issues, in this example I just define all my pages as `.page.vue` and export a `mode` from my pages which I use in [`_default.page.server.js`](pages/_default/_default.page.server.js) and [`_default.page.client.js`]((pages/_default//_default.page.client.js)) to manually change the behavior.
+So, to try and remove these issues, in this example I just define all my pages as `.page.vue` and export a `mode` from my pages which I use in [`_default.page.server.js`](pages/_default/_default.page.server.js) and [`_default.page.client.js`]((pages/_default/_default.page.client.js)) to manually change the behavior.
 
 ## The Downside?
 
