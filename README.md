@@ -1,8 +1,14 @@
 # `vps-issue-userland-mode`
 
-Most of the issue I'm running into with VPS are things that stop working properly when I switch my `.page.vue` file to `.page.client.vue` or `.page.server.vue`.
+All of the issues I'm running into with VPS right now are things that stop working properly when I switch my `.page.vue` file to `.page.client.vue` or `.page.server.vue`.
 
-To try and remove these issues, in this example I just define all my pages as `.page.vue` and export a `mode` from my pages which I use in [`_default.page.server.js`](pages/_default//_default.page.server.js) and [`_default.page.client.js`]((pages/_default//_default.page.client.js)) to manually change the behavior.
+- HMR doesn't work in client-only pages.
+- UnoCSS doesn't work in server-only pages.
+- Tailwind CSS doesn't work in client-only pages.
+
+I don't know how to fix these issues, but I do know what I'm trying to accomplish in the first place by making pages client-only or server-only.
+
+So, to try and remove these issues, in this example I just define all my pages as `.page.vue` and export a `mode` from my pages which I use in [`_default.page.server.js`](pages/_default//_default.page.server.js) and [`_default.page.client.js`]((pages/_default//_default.page.client.js)) to manually change the behavior.
 
 ## The Downside?
 
